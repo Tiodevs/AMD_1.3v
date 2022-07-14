@@ -1,0 +1,368 @@
+/* Importando coisas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Estilo em geral */
+:root {
+    --fundo: #FFFFFF;
+    --roxo: #38065E
+}
+
+body{
+    background-color: var(--fundo);
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--fundo);
+}
+
+/* Menu de navegação */
+
+.menu{
+    width: 100%;
+    height: 75px;
+    background-color: var(--fundo);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid none;
+    border-radius: 0px 0px 75px 75px;
+    position: fixed;
+    right: 0;
+    top: 0%;
+    justify-content: space-around;
+}
+
+.menu *{
+    list-style: none;
+    color: var(--roxo);
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    color: var(--roxo);
+}
+
+.menu ul li{
+    width: 110px;
+    border: 1px solid var(--fundo);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu ul ul li ul li{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li ul li{
+    width: 200px;
+    background-color: var(--fundo);
+}
+
+#sub-list{
+    color: #000000
+}
+
+.menu ul li ul{
+    width: 200px;
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu ul li:hover>ul{
+    display: block;
+    cursor: pointer;
+}
+
+.menu ul li:hover>ul li{
+    display: block;
+    cursor: pointer;
+
+}
+
+.menu ul li ul li:hover{
+    background-color: var(--roxo);
+    color: var(--fundo);
+    cursor: pointer;
+}
+
+.menu ul li ul li:hover>ul li{
+    color: var(--roxo);
+    cursor: pointer;
+}
+
+.menu ul li ul li ul li:hover{
+    color: var(--fundo);
+    cursor: pointer;
+}
+
+
+.menu ul ul ul{
+    margin-left: 197px;
+    top: 0%;
+    position: absolute;
+}
+
+#logo-nav{
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo-nav *{
+    width: 25px;
+    color: var(--fundo);
+    cursor: pointer;
+}
+
+.logo-nav{
+    cursor: pointer;
+}
+
+
+/* Parte capa */
+
+.capa-poker{
+    background-color: var(--roxo);
+   width: 100%;
+   display: flex;
+   justify-content: start;
+   padding: 150px 100px 100px 100px;
+   align-items: center;
+   min-height: 112vh;
+   border-radius: 0px 0px 75px 75px;
+}
+
+.capa-poker div *{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.title-capa{
+    width: 70%;
+    font-size: 50px;
+    color: var(--fundo);
+}
+
+.p-capa-2{
+    font-size: 15px;
+    color: var(--fundo);
+}
+
+#button-capa {
+    color: var(--fundo);
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    background-image: linear-gradient(to right, #f09c90, #bc23b3);
+    border-radius: 20px;
+    border: 0px solid #ffffff00;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* quem sou eu */
+
+.section-1{
+    display: flex;
+    padding: 100px;
+    background-color: var(--fundo);
+    border-radius: 0px 0px 75px 75px;
+}
+
+.section-1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section-1 div *{
+    margin-bottom: 30px;
+    color: var(--roxo);
+}
+
+/* Etapas */
+
+.section-2{
+    display: flex;
+    padding: 100px;
+    background-color: var(--roxo);
+    border-radius: 75px 75px 75px 75px;
+}
+
+.section-1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.etapas{
+    width: 100%;
+}
+
+.content-etapas-1{
+    width: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.content-etapas-1 h1{
+    font-size: 40px;
+    width: 250%;
+    font-weight: bolder;
+    color: var(--fundo);
+}
+
+.span{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--fundo);
+    overflow: hidden;
+    margin-top: 27px;
+}
+
+.content-etapas-2 {
+    width: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.content-etapas-2 p{
+    margin-top: 5px;
+    color: var(--fundo);
+}
+
+.circulo-etapas{
+    border:  3px solid var(--fundo);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fundo);
+    font-size: 50px;
+    font-weight:700;
+}
+
+
+.partes-etaps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-etapas-3{
+    margin-top: 90px;
+    color: var(--fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-etaps{
+    width: 83%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+}
+
+.text-etaps *{
+    padding-top: 25px;
+     text-align: center;
+}
+
+.text-etaps h1{
+    font-size: 18px; 
+}
+
+.text-etaps p{
+    font-size: 13px; 
+}
+
+
+
+
+/* Portifolio */
+
+
+/* @media responsividade */
+
+@media (max-width: 1000px){  
+    .p-capa-1{
+        font-size: 15px;
+    }
+
+    .title-capa{
+        font-size: 40px;
+    }
+
+    .p-capa-2{
+        font-size: 13px;
+    }
+
+    .cards{
+        margin-top: 90px;
+    }
+
+    .cards *{
+        margin-bottom: 90px;
+    }
+  }
+  
+@media (max-width: 656px){
+
+    .title-capa{
+    width: 100%;
+    font-size: 30px;
+    color: #FFFF;
+    }
+
+    .capa-poker{
+        justify-content: center;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .capa-poker div h1{
+        margin-top: 70px;
+    }
+
+    .logo-nav-responsivo{
+        display: block;
+    }
+
+}  
+
+
+.title-quemsoueu, .video-quemsoueu, .title-capa, .content-etapas-1, .content-etapas-2, .content-etapas-3{
+    visibility: hidden;
+}
